@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #dbeaf9;
+  }
+  
+  .App {
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  .search-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .search-input {
+    width: 400px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .courses-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
