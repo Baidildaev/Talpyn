@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
-function Navbar() {
-  const [language, setLanguage] = useState('kz'); // по умолчанию казахский
+function Navbar({ toggleSidebar }) { 
+  const [language, setLanguage] = useState('kz');
 
   const handleLanguageChange = (e) => {
     setLanguage(e.target.value);
@@ -11,9 +11,16 @@ function Navbar() {
 
   return (
     <div className="navbar">
-      <Link to="/" className="logo">
-        Σ Talpyn
-      </Link>
+      <div className="navbar-left">
+        <button className="burger-menu" onClick={toggleSidebar}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <Link to="/" className="logo">
+          Σ Talpyn
+        </Link>
+      </div>
 
       <div className="menu">
         <Link to="/preparation">

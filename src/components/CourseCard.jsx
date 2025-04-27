@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // ДОБАВЛЯЕМ импорт Link
 import './CourseCard.css';
 
 function CourseCard({ course }) {
@@ -12,7 +13,11 @@ function CourseCard({ course }) {
       <h3 className="course-title">{course.title}</h3>
       <p className="course-price">{course.price}</p>
       <p className="course-description">{course.description}</p>
-      <button className="start-button">Начать урок</button>
+
+      {/* ОБЕРНУЛИ кнопку в Link */}
+      <Link to="/lessons">
+        <button className="start-button">Начать урок</button>
+      </Link>
     </div>
   );
 }

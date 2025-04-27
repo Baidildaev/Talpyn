@@ -20,7 +20,7 @@ function HomePage() {
             <img src={mathImage} alt="Математика" />
             <h3>Математика</h3>
             <p>Оқу ұзақтығы: 1 ай</p>
-            <p>Оқу басталуы: 22 сәуір</p>
+            <p>Оқу басталуы: 1 сәуір</p>
             <p className="price">1 000 ₸</p>
             <button>Кәрзеңкеге қосу</button>
           </div>
@@ -29,7 +29,7 @@ function HomePage() {
             <img src={literacyImage} alt="Математикалық сауаттылық" />
             <h3>Математикалық сауаттылық</h3>
             <p>Оқу ұзақтығы: 1 ай</p>
-            <p>Оқу басталуы: 22 сәуір</p>
+            <p>Оқу басталуы: 1 сәуір</p>
             <p className="price">500 ₸</p>
             <button>Кәрзеңкеге қосу</button>
           </div>
